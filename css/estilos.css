@@ -1,0 +1,232 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+   /* variables */
+:root{
+ --green-color: #7acc2d;
+ --white-color: white;
+ --black-color: #313337;
+
+ /* espaciado */
+--space:10px;
+/* tipografia */
+--normal: 12px;
+/* box shadow */
+--box: 0px 0 2px 1px #e6e5e9;
+}
+
+
+
+  /* variables */
+
+
+
+html,body{
+  padding: 0px;
+  margin: 0px;
+  font-size: var(--normal);
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+  display:flex;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color:white;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+nav ul{
+  display:flex;
+}
+
+nav li{
+  padding : 0px 10px;
+  list-style: none;
+}
+
+nav li a{
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+nav li a:hover{
+  color: white;
+}
+
+label{
+  font-size: var(--normal);
+}
+
+.main_section{
+  padding: 10%;
+  text-align: center;
+}
+
+.products{
+  background-image: url("../images/curve.png");
+  /* max-height: 50px; */
+
+  /* elproblema para que las imagenes no bajaran sin 
+  translaparse era que estaba habilitado el max heigth  */
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 20%;
+  display: flex;
+  height: 95px;
+  padding-bottom: 10%;
+}
+
+.product{
+  padding: 20px;
+  margin-top: -360px;
+}
+
+.product .content{
+  background-color: white;
+  padding: 20px;
+  box-shadow: var(--box);
+}
+
+.img_content{
+  text-align: center;
+}
+
+.main_button{
+  background-color: var(--green-color);
+  width: 100%;
+  padding: var(--space);
+  font-size: var(--normal);
+  color: var(--white-color);
+  border 0; 
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.main_button:hover{
+  background-color: #5e9e22;
+}
+
+.features{
+  /* border: 1px solid gray; */
+  box-shadow:var(--box);
+  padding: 5%;
+  display: flex;
+  }
+
+.features_content{
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
+  /* text-align: center; */
+  text-align: center;
+  justify-content: center;
+  width: 138;
+  height: 113;
+}
+
+p{
+  text-align: left;
+}
+
+.features_image{
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.mentions{
+  margin: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding: 3%;
+  display: flex;
+  /* width: 100%;
+  text-align:center; */
+ justify-content: center;
+}
+
+.mention {
+/* justify-content: center;
+min-width: 240px; */
+}
+
+.mentions_content{
+  box-shadow:var(--box);
+  margin: 0px;
+  margin-left: 5%;
+  padding-left: 15px;
+  padding: 0px;
+  width: 240px;
+  align-items: center;
+  /* max-width: 100%; */
+  /* justify-content: center; */
+ 
+  /* justify-content: space-around; */
+  /* width: 230;
+  height: 140; */
+  
+  }
+
+.mentions_image{
+  /* margin: 0px;  */
+  /* margen de 0 fue lo que hizo que se pudiera expandir la imagen */
+/* margin: 0px; */
+/* max-width: 100%; */
+text-align: center;
+width: 100%;
+margin: auto;
+
+}
+ 
+.modulo_pago{
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space);
+}
+
+.modulo_pago_images{
+  max-width: 150px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+.data {
+  margin-top: var(--space);
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
+}
+
+.modulo_pago .main_button{
+  margin-top: 10px;
+}
+.main_footer{
+  background-color: rgb(17, 12, 12);
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color:white;
+  padding: 5px 15px 10px 10px;
+  }
+
+a {
+  color:white;
+  align-items: center;
+padding: 10px 10px 5px 15px;
+text-decoration: none;
+}
